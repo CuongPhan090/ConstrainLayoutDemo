@@ -1,4 +1,4 @@
-package com.example.b32constraintlayoutdemo
+ package com.example.b32constraintlayoutdemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
