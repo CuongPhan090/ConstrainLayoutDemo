@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_itemImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/cottonshirt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Cotton Shirt"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_itemDescription"
+        app:layout_constraintStart_toEndOf="@id/iv_itemImage"
+        app:layout_constraintTop_toTopOf="@id/iv_itemImage"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/tv_itemDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="This is 100% cotton shirt which is made by Bangladesh"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/tv_originalPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/tv_itemName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_itemName" />
+
+    <TextView
+        android:id="@+id/tv_originalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$150"
+        android:textColor="#b7b9ba"
+        app:layout_constraintBottom_toTopOf="@+id/tv_newPrice"
+        app:layout_constraintStart_toStartOf="@id/tv_itemDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tv_itemDescription" />
+
+    <TextView
+        android:id="@+id/tv_newPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$112"
+        android:textColor="#e3727f"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_itemImage"
+        app:layout_constraintStart_toStartOf="@id/tv_originalPrice"
+        app:layout_constraintTop_toBottomOf="@+id/tv_originalPrice" />
+
+    <TextView
+        android:id="@+id/tv_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/iv_tealSquare"
+        app:layout_constraintEnd_toEndOf="@id/tv_itemDescription"
+        app:layout_constraintTop_toTopOf="@id/tv_originalPrice" />
+
+    <ImageView
+        android:id="@+id/iv_tealSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_teal_square"
+        app:layout_constraintBottom_toBottomOf="@id/tv_newPrice"
+        app:layout_constraintEnd_toStartOf="@id/iv_pinkSquare"
+        app:layout_constraintTop_toTopOf="@id/tv_newPrice" />
+
+    <ImageView
+        android:id="@+id/iv_pinkSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_pink_square"
+        app:layout_constraintEnd_toStartOf="@id/iv_orangeSquare"
+        app:layout_constraintTop_toTopOf="@id/iv_tealSquare" />
+
+    <ImageView
+        android:id="@+id/iv_orangeSquare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_orange_square"
+        app:layout_constraintEnd_toEndOf="@id/tv_itemDescription"
+        app:layout_constraintTop_toTopOf="@id/iv_pinkSquare" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
